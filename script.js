@@ -47,8 +47,5 @@ function typeWriter() {
 
 // Continue Button
 document.getElementById("continueBtn").addEventListener("click", function () {
-
-    alert("Next Surprise ❤️");
-
+    alert("Next Page Coming Soon ❤️");
 });
-

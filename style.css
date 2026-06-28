@@ -94,3 +94,27 @@ button{
 #openBtn:hover{
     transform:scale(1.08);
     }
+.intro-page{
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    height:100vh;
+    padding:20px;
+    color:white;
+}
+
+#typing{
+    white-space:pre-line;
+    margin-bottom:30px;
+}
+
+#continueBtn{
+    background:white;
+    color:#ff2e7a;
+    border:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:18px;
+}

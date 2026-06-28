@@ -46,7 +46,6 @@ function typeWriter() {
     if (i < text.length) {
 
         document.getElementById("typing").innerHTML += text.charAt(i);
-
         i++;
 
         setTimeout(typeWriter, 50);
@@ -55,7 +54,7 @@ function typeWriter() {
 
 }
 
-// Continue
+// Continue Button
 document.getElementById("continueBtn").addEventListener("click", function () {
 
     document.querySelector(".intro-page").style.display = "none";
@@ -63,7 +62,7 @@ document.getElementById("continueBtn").addEventListener("click", function () {
 
 });
 
-// Heart Page → Gallery
+// Heart Click
 document.querySelector(".heart").addEventListener("click", function () {
 
     document.querySelector(".love-page").style.display = "none";
@@ -71,8 +70,7 @@ document.querySelector(".heart").addEventListener("click", function () {
 
 });
 
-// Gallery
-
+// Photos
 const photos = [
 
 "IMG-20260628-WA0013.jpg",
@@ -82,6 +80,7 @@ const photos = [
 
 ];
 
+// Messages
 const messages = [
 
 `💖 Photo 1
@@ -108,6 +107,7 @@ Meri duaon mein tum hamesha rahogi. ❤️🫂`
 
 let current = 0;
 
+// Next Photo
 document.getElementById("nextPhoto").addEventListener("click", function () {
 
     current++;
@@ -119,7 +119,8 @@ document.getElementById("nextPhoto").addEventListener("click", function () {
 
     } else {
 
-        alert("❤️ Thank You For Being In My Life ❤️");
+        document.querySelector(".gallery-page").style.display = "none";
+        document.querySelector(".final-page").style.display = "flex";
 
     }
 

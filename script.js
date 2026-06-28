@@ -119,10 +119,14 @@ document.getElementById("nextPhoto").addEventListener("click", function () {
 
     } else {
 
-        document.querySelector(".gallery-page").style.display = "none";
-        document.querySelector(".final-page").style.display = "flex";
+    document.querySelector(".gallery-page").style.display = "none";
 
-    }
+const finalPage = document.querySelector(".final-page");
+finalPage.style.display = "flex";
+
+// Love Letter hamesha top se open hoga
+finalPage.scrollTop = 0;
+window.scrollTo(0, 0);
 
 });
 

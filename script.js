@@ -127,6 +127,8 @@ finalPage.style.display = "flex";
 // Love Letter hamesha top se open hoga
 finalPage.scrollTop = 0;
 window.scrollTo(0, 0);
+    
+}
 
 });
 

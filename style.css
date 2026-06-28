@@ -188,3 +188,23 @@ button:hover{
         transform:scale(1);
     }
             }
+/* Final Page */
+
+.final-page{
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    height:100vh;
+    padding:25px;
+    overflow-y:auto;
+}
+
+#finalText{
+    white-space:pre-line;
+    color:#ff2e7a;
+    font-size:20px;
+    line-height:34px;
+    animation:fadeIn 2s ease;
+}

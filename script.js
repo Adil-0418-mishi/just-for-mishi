@@ -1,18 +1,22 @@
 const correctPassword = "0610";
 
 // Password Check
-function checkPassword() {
+document.querySelector(".password-page button").addEventListener("click", function () {
+
     const userPassword = document.querySelector("input").value;
 
     if (userPassword === correctPassword) {
+
         document.querySelector(".password-page").style.display = "none";
         document.querySelector(".welcome-page").style.display = "flex";
-    } else {
-        alert("Oops! 🥺 Ye website sirf Mishi ke liye hai. ❤️");
-    }
-}
 
-document.querySelector(".password-page button").addEventListener("click", checkPassword);
+    } else {
+
+        alert("Oops! 🥺 Ye website sirf Mishi ke liye hai. ❤️");
+
+    }
+
+});
 
 // Open It Button
 document.getElementById("openBtn").addEventListener("click", function () {
@@ -25,27 +29,34 @@ document.getElementById("openBtn").addEventListener("click", function () {
 });
 
 // Typewriter Text
-const text = `Hi Mishi... ❤️
+const text = `Hey Mishi ❤️
 
-Ye sirf ek website nahi...
+Ye website sirf tumhare liye banayi hai...
 
-Ye meri feelings hain.
+Har page par ek naya surprise tumhara intezar kar raha hai. ✨
 
-Har section me ek naya surprise tumhara intezar kar raha hai... 💖`;
+I hope tumhe ye pasand aaye. 💖`;
 
 let i = 0;
 
 function typeWriter() {
 
     if (i < text.length) {
+
         document.getElementById("typing").innerHTML += text.charAt(i);
+
         i++;
+
         setTimeout(typeWriter, 50);
+
     }
 
 }
 
 // Continue Button
 document.getElementById("continueBtn").addEventListener("click", function () {
-    alert("Next Page Coming Soon ❤️");
+
+    document.querySelector(".intro-page").style.display = "none";
+    document.querySelector(".love-page").style.display = "flex";
+
 });

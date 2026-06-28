@@ -188,16 +188,14 @@ button:hover{
         transform:scale(1);
     }
             }
-/* Final Page */
-
 .final-page{
     display:none;
     flex-direction:column;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
     text-align:center;
-    height:100vh;
-    padding:25px;
+    min-height:100vh;
+    padding:40px 20px;
     overflow-y:auto;
 }
 
@@ -205,6 +203,7 @@ button:hover{
     white-space:pre-line;
     color:#ff2e7a;
     font-size:20px;
-    line-height:34px;
-    animation:fadeIn 2s ease;
-}
+    line-height:35px;
+    margin-top:20px;
+    margin-bottom:40px;
+    }

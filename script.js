@@ -125,3 +125,8 @@ document.getElementById("nextPhoto").addEventListener("click", function () {
     }
 
 });
+document.getElementById("endBtn").addEventListener("click", function(){
+
+    alert("❤️ Thank You Mishi ❤️\n\nI Will Always Love You. 🥹💍");
+
+});

@@ -1,24 +1,20 @@
 const correctPassword = "0610";
 
-// Password Check
+// Password
 document.querySelector(".password-page button").addEventListener("click", function () {
 
-    const userPassword = document.querySelector("input").value;
+    const password = document.querySelector(".password-page input").value;
 
-    if (userPassword === correctPassword) {
-
+    if (password === correctPassword) {
         document.querySelector(".password-page").style.display = "none";
         document.querySelector(".welcome-page").style.display = "flex";
-
     } else {
-
-        alert("Oops! 🥺 Ye website sirf Mishi ke liye hai. ❤️");
-
+        alert("❌ Wrong Password ❤️");
     }
 
 });
 
-// Open Button
+// Open Website
 document.getElementById("openBtn").addEventListener("click", function () {
 
     document.querySelector(".welcome-page").style.display = "none";
@@ -46,6 +42,7 @@ function typeWriter() {
     if (i < text.length) {
 
         document.getElementById("typing").innerHTML += text.charAt(i);
+
         i++;
 
         setTimeout(typeWriter, 50);
@@ -54,7 +51,7 @@ function typeWriter() {
 
 }
 
-// Continue Button
+// Continue
 document.getElementById("continueBtn").addEventListener("click", function () {
 
     document.querySelector(".intro-page").style.display = "none";
@@ -62,11 +59,14 @@ document.getElementById("continueBtn").addEventListener("click", function () {
 
 });
 
-// Heart Click
+// Heart
 document.querySelector(".heart").addEventListener("click", function () {
 
     document.querySelector(".love-page").style.display = "none";
     document.querySelector(".gallery-page").style.display = "flex";
+
+    document.getElementById("photo").src = photos[0];
+    document.getElementById("photoText").innerText = messages[0];
 
 });
 
@@ -86,22 +86,22 @@ const messages = [
 `💖 Photo 1
 
 Jab maine tumhe pehli baar dekha...
-Mujhe bilkul nahi pata tha ke tum meri zindagi ka sabse khoobsurat hissa ban jaogi. ❤️`,
+Mujhe nahi pata tha ke tum meri zindagi ka sabse khoobsurat hissa ban jaogi. ❤️`,
 
 `🌸 Photo 2
 
 Tumhari muskurahat...
-Meri har udaasi ko khushi mein badal deti hai. 🥹❤️`,
+Meri har udaasi ko khushi me badal deti hai. 🥹❤️`,
 
 `🌹 Photo 3
 
 Har yaad jo tumhare saath bani...
-Meri zindagi ki sabse qeemti yaadon mein se ek hai. 🌸❤️`,
+Meri zindagi ki sabse qeemti yaad hai. 🌸❤️`,
 
 `💞 Photo 4
 
 Chahe kitni bhi dooriyan aa jayein...
-Meri duaon mein tum hamesha rahogi. ❤️🫂`
+Meri duaon me tum hamesha rahogi. ❤️🫂`
 
 ];
 
@@ -125,8 +125,18 @@ document.getElementById("nextPhoto").addEventListener("click", function () {
     }
 
 });
-document.getElementById("endBtn").addEventListener("click", function(){
 
-    alert("❤️ Thank You Mishi ❤️\n\nI Will Always Love You. 🥹💍");
+// Final Surprise Button
+document.getElementById("endBtn").addEventListener("click", function () {
+
+    document.querySelector(".final-page").style.display = "none";
+    document.querySelector(".end-page").style.display = "flex";
+
+});
+
+// Restart Button
+document.getElementById("restartBtn").addEventListener("click", function () {
+
+    location.reload();
 
 });

@@ -11,7 +11,8 @@ body{
     justify-content:center;
     align-items:center;
     min-height:100vh;
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
 }
 
 /* Common Pages */
@@ -190,9 +191,16 @@ button:hover{
 =========================== */
 
 .final-page{
-    min-height:100vh;
-    padding:35px 20px;
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    width:100%;
+    height:100vh;
+    padding:30px 20px;
     overflow-y:auto;
+    overflow-x:hidden;
+    -webkit-overflow-scrolling:touch;
 }
 
 #finalText{
